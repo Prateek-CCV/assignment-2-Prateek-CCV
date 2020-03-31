@@ -24,4 +24,28 @@ public class MyPriorityQueue {
         this.rear = queue;
 
     }
+
+    public void isEmpty() {
+        if (rear == null && front == null) {
+            return;
+        }
+    }
+
+
+    public void sort(Node node) {
+        if (rear == null && front == null) {
+            return;
+        }
+        int data = node.getData();
+        sort(node);
+        enquue(data);
+    }
+
+    public Node getFront() {
+        return front;
+    }
+
+    public Node getRear() {
+        return rear;
+    }
 }
