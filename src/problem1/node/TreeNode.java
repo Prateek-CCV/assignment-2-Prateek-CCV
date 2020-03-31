@@ -11,5 +11,23 @@ public class TreeNode {
     private TreeNode leftNode;
     private TreeNode rightNode;
 
+    public TreeNode(int item) {
+        data = item;
+        leftNode = null;
+        rightNode = null;
+    }
+
+    public int getData() {
+        return data;
+    }
+
+    public TreeNode getLeftNode() {
+        return leftNode;
+    }
+
+    public TreeNode getRightNode() {
+        return rightNode;
+    }
+
 
 }
