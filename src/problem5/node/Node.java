@@ -10,4 +10,21 @@ public class Node {
     public Node next = null;
     int data = 0;
 
+    public Node(Node next, int data) {
+        this.next = next;
+        this.data = data;
+    }
+
+    public Node(int data) {
+        this.data = data;
+        this.next = null;
+    }
+
+    public Node getNext() {
+        return next;
+    }
+
+    public int getData() {
+        return data;
+    }
 }
